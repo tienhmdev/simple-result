@@ -98,10 +98,10 @@ export const fetchUserRepository = async (userId: string): Promise<Result<User, 
 ### Types
 
 | Type           | Description                                                                          |
-| -------------- | ------------------------------------------------------------------------------------ | -------- |
+| -------------- | ------------------------------------------------------------------------------------ |
 | `Ok<T>`        | Represents a successful operation containing a value of type `T`.                    |
 | `Err<E>`       | Represents a failed operation containing an error of type `E` (must extend `Error`). |
-| `Result<T, E>` | A union type: `Ok<T>                                                                 | Err<E>`. |
+| `Result<T, E>` | A union type: `Ok<T> and Err<E>`.                                                    |
 
 ### Guards & Utilities
 
