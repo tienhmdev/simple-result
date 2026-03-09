@@ -5,7 +5,7 @@
  * or fail (Err), eliminating the need for untyped exceptions and providing better
  * compile-time safety.
  *
- * @author Hoang Tien (tienhmdev)
+ * @author Hoang Tien (tienhmjs)
  * @license MIT
  */
 

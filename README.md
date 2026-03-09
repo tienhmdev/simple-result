@@ -4,8 +4,8 @@ A lightweight, zero-dependency, **type-safe `Result` type** implementation for T
 
 Inspired by Rust's Error Handling, `simple-result` allows you to handle success and failure explicitly without the unpredictability of untyped `try/catch` blocks.
 
-[![npm](https://img.shields.io/npm/v/@tienhmdev/simple-result)](https://www.npmjs.com/package/@tienhmdev/simple-result)
-[![license](https://img.shields.io/npm/l/@tienhmdev/simple-result)](./LICENSE.md)
+[![npm](https://img.shields.io/npm/v/@tienhmjs/simple-result)](https://www.npmjs.com/package/@tienhmjs/simple-result)
+[![license](https://img.shields.io/npm/l/@tienhmjs/simple-result)](./LICENSE.md)
 
 ---
 
@@ -24,9 +24,9 @@ In standard TypeScript, functions that throw errors are not represented in the t
 ## 📦 Installation
 
 ```sh
-pnpm add @tienhmdev/simple-result
+pnpm add @tienhmjs/simple-result
 # or
-npm install @tienhmdev/simple-result
+npm install @tienhmjs/simple-result
 ```
 
 ---
@@ -36,7 +36,7 @@ npm install @tienhmdev/simple-result
 ### 1. Creating Results
 
 ```ts
-import { ok, err, Result } from '@tienhmdev/simple-result'
+import { ok, err, Result } from '@tienhmjs/simple-result'
 
 function divide(a: number, b: number): Result<number, Error> {
     if (b === 0) return err(new Error('Division by zero'))
@@ -47,7 +47,7 @@ function divide(a: number, b: number): Result<number, Error> {
 ### 2. Handling Results
 
 ```ts
-import { isOk, isErr, unwrapOk, unwrapErr } from '@tienhmdev/simple-result'
+import { isOk, isErr, unwrapOk, unwrapErr } from '@tienhmjs/simple-result'
 
 const result = divide(10, 0)
 
@@ -67,7 +67,7 @@ This utility is exceptionally powerful when used in data repositories to handle 
 ### API Repository Implementation
 
 ```ts
-import { Result, ok, err, isErr, unwrapOk, unwrapErr } from '@tienhmdev/simple-result'
+import { Result, ok, err, isErr, unwrapOk, unwrapErr } from '@tienhmjs/simple-result'
 
 interface User {
     id: string
@@ -126,4 +126,4 @@ export const fetchUserRepository = async (userId: string): Promise<Result<User, 
 
 ## 📄 License
 
-MIT © Hoang Tien (tienhmdev)
+MIT © Hoang Tien (tienhmjs)

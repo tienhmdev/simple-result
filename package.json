@@ -1,7 +1,7 @@
 {
-    "name": "@tienhmdev/simple-result",
+    "name": "@tienhmjs/simple-result",
     "description": "A lightweight, type-safe Result type for TypeScript — handle success and failure without exceptions.",
-    "author": "Hoang Tien (tienhmdev)",
+    "author": "Hoang Tien (tienhmjs)",
     "version": "1.0.0",
     "type": "module",
     "main": "./dist/index.cjs",
